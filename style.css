@@ -1,0 +1,268 @@
+/* Dark Game Room */
+/* Only the dark bits done by Mcsticken, the main site stuff is by chris10000 */
+
+/*****Importing Game Room except for special pages*****/
+/* Overall Files */
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/variables.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/overallStyles.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/header.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/footer.css');
+@import url('https://gazellegames.net/static/styles/game_room/caticons.css');
+
+/* Main Pages */
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/homepage.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/torrentsBrowse.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/torrentsGames.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/bundles.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/requests.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/forums.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/rules.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/wiki.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/staff.css');
+
+/* Palooza */
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaOverall.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaShop.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaInventory.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaCrafting.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaEquipment.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaTrading.css');
+
+/* AdventureClub (Fight System) */
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/adventureSkills.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/adventureBackpack.css');
+
+/* Misc Pages */
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/upload.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/profiles.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/clans.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/staffPages.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/miscPages.css');
+
+/* Other Screen Sizes */
+@import url('https://gazellegames.net/static/styles/game_room/screenSizes/mobile.css') screen and (max-width: 800px);
+@import url('https://gazellegames.net/static/styles/game_room/screenSizes/largeDesktop.css') screen and (min-width: 1400px);
+@import url('https://gazellegames.net/static/styles/game_room/screenSizes/middleDesktop.css') screen and (min-width: 801px) and (max-width: 1099px);
+@import url('https://gazellegames.net/static/styles/game_room/screenSizes/palooza.css');
+
+/* Dark Theme */
+/* Variables */
+:root {
+	--grey:			#888888;
+	--mediumBlue: 	#494949;
+	--darkBlue:		#363636;
+	--darkBlue2:	#000000;
+	--darkGrey:		#313131;
+	--lightBlue: 	#D0E5D2;
+	--newGold:		#F8DB66;
+	--rowa: 		rgba(0, 0, 0, .85);
+	--rowb: 		rgba(73, 73, 73, .85);
+	--label:		#363636;
+	--menuTop:		#303030;
+	--menuBottom:	#1F1F1F;
+	--tpBack:		rgba(97,107,98,0.6);}
+	
+/* General stuff */
+#userinfo_stats li#stats_gold {
+	color: var(--newGold) !important;}
+.profile .box_stats #gold .stat {
+	color: var(--newGold) !important;}
+.profile .box_stats #profile_views .stat {
+	color: #FFF !important;}
+#logo {
+	background: url('https://ptpimg.me/556j0z.png') no-repeat center !important;}
+#userinfo {
+	background: linear-gradient(var(--menuTop),var(--menuBottom));}
+.global_buffs {
+	background-color: transparent;}
+body {
+	background: var(--darkBlue2);}
+#menu {
+	border-bottom: 1px solid var(--mediumBlue);}
+#menu {
+	border-bottom: 1px solid var(--mediumBlue);
+	font-family: roboto;
+	font-size: 1.7em;}
+#menu ul {
+	max-width: 1050px;
+	margin-top: -3px;}
+#userinfo #userinfo_username .donateico {
+	margin-top: 31px;
+	margin-left: -7px;}
+#userinfo #userinfo_username .donateico a {
+	font-family: roboto;
+	font-size: 1.7em;}
+#userinfo_minor{
+	background: url("https://ptpimg.me/hpr604.png") no-repeat scroll right top;}
+#userinfo_minor:hover li {
+	background: var(--darkBlue2);}
+#userinfo_minor li {
+	border-bottom: 1px solid var(--mediumBlue);}
+#userinfo_minor li a {
+	color: var(--lightBlue);}
+#userinfo_minor li a:hover {
+	color: var(--white);}
+#userinfo_stats:hover li {
+	background: var(--darkBlue2);}
+#userinfo_stats li {
+	border-bottom: 1px solid var(--mediumBlue);}
+#userinfo_username .sub span {
+	color: var(--lightBlue);
+	background-color: var(--darkBlue2);}
+#userinfo_username .sub span a {
+	color: var(--lightBlue);}
+#userinfo_username .sub span a:hover {
+	color: var(--white);}
+#searchbars ul:hover li {
+	background: var(--darkBlue);}
+#searchbars ul li input {
+	background-color: var(--darkBlue2) !important;}
+#alerts:hover a {
+	background: var(--darkBlue2);}
+#content {
+	background: black;}
+.box, table {
+	background: black;}
+#user td.label {
+	background-color: var(--mediumBlue);}
+.profile .box_main_info {
+	background: black;}
+.profile .box_links {
+	border-top: 2px solid var(--darkBlue);}
+.profile .box_stats .offline {
+	opacity: 1;}
+.profile .box_stats #last_seen {
+	opacity: 1;}
+#user .box_gold td.label {
+	background-color: rgba(73,73,73,0.35);}
+#torrents td.label {
+		background-color: var(--mediumBlue);}
+#torrents input {
+	background-color: var(--darkBlue);}
+.sticky #displayname:before {
+	background-image: url('https://ptpimg.me/2p5d71.png');}
+#platcheckbox td[colspan="5"] {
+	background-color: var(--darkBlue);}
+input::placeholder {
+	color: var(--grey);}
+input {
+	background-color: var(--darkGrey);
+	border: 1px solid var(--mediumBlue);}
+#announcement {
+	width: 70%;
+	font-size: 1.1em;
+	border-color: var(--grey);
+	background-color: var(--tpBlack);}
+	
+/* BBCode */
+.bbbutt {
+	background: var(--darkBlue);
+	border: medium solid var(--mediumBlue);}
+#bb_bold {
+	background-image: url('https://ptpimg.me/w5jr71.png');}
+#bb_ita {
+	background-image: url('https://ptpimg.me/ol9600.png');}
+#bb_und {
+	background-image: url('https://ptpimg.me/kr80ud.png');}
+#bb_strk {
+	background-image: url('https://ptpimg.me/j67sxc.png');}
+#bb_lef {
+	background-image: url('https://ptpimg.me/o0u9su.png');}
+#bb_cent {
+	background-image: url('https://ptpimg.me/zq5sh8.png');}
+#bb_righ {
+	background-image: url('https://ptpimg.me/ox60g1.png');}
+#bb_h1 {
+	background-image: url('https://ptpimg.me/37u9fv.png');}
+#bb_h2 {
+	background-image: url('https://ptpimg.me/ymmapn.png');}
+#bb_h3 {
+	background-image: url('https://ptpimg.me/088h2e.png');}
+#bb_list {
+	background-image: url('https://ptpimg.me/vxs36m.png');}
+	
+/* Forums */
+#forums .thin {
+	background-color: black;}
+.rowa td {
+	background-color: var(--darkBlue2);
+	border-bottom: 2px solid var(--darkBlue);}
+.rowb td {
+	background-color: var(--darkGrey);}
+#forums .forum_post tr {
+	background-color: black;}
+td.avatar {
+	background-color: black !important;}
+tr.likes td {
+	background-color: black;
+	border-top: 2px solid var(--darkBlue);}
+tr.likes, tr.likes a {
+	color: var(--grey);}
+tr.likes td:nth-of-type(2) {
+	color: var(--grey);}
+#forums .forum_post .colhead_dark {
+	background: linear-gradient(var(--menuTop),var(--menuBottom)) !important;}
+#footer {
+	background-color: black;}
+#forums #content .thin td.unread {
+	background-image: url('https://ptpimg.me/327604.png');}
+#forums #content .thin td.unread_sticky {
+	background-image: url('https://ptpimg.me/t5i5p4.png');}
+#forums #content .thin td.unread_locked{
+	background-image:url('https://ptpimg.me/t5inx5.png');}
+#forums #content .thin td.unread_locked_sticky{
+	background-image: url('https://ptpimg.me/q3lr5s.png');}
+.last_read { 
+	background-image: url('https://ptpimg.me/38m2us.png');}
+.sticky_post_label::before {
+	background: url(https://ptpimg.me/35u6g8.png);}
+.forumstat {
+	background-color: var(--darkBlue);}
+/* Reports */
+#reportsv2 .colhead, #reportsv2 .colhead_dark, #reportsv2 .head {
+	background-color: var(--darkBlue);
+	background: linear-gradient(var(--menuTop),var(--menuBottom));}
+#reportsv2 #content table tr td table tr {
+	border-bottom: 2px solid var(--darkBlue);
+	background: black;}
+
+/* Inbox */
+#inbox td {
+	border-bottom: rgba(0,0,0,0) !important;}
+#inbox input {
+	background-color: var(--darkBlue);}
+#inbox textarea {
+	background-color: var(--darkBlue);}
+
+/* Small screens */
+@media screen and (max-width: 1099px) {
+	.clan_trophy img {
+		height: 75px;}
+	.clan_trophy {
+		top: 120px;}
+}
+
+/* Mobile */
+@media screen and (max-width: 801px) {
+	#logo {
+		background: url(https://ptpimg.me/87y85l.png) no-repeat bottom center !important;}
+	#alerts {
+		background: url('https://ptpimg.me/z4ht73.png') no-repeat scroll right top var(--lightBlue);
+		background-color: transparent;}
+	#alerts a {
+		border-top: 1px solid var(--mediumBlue) !important;
+		border-bottom: 1px solid var(--mediumBlue) !important;}
+	#menu ul li {
+		border-top: 1px solid var(--mediumBlue) !important;
+		border-bottom: 1px solid var(--mediumBlue) !important;}
+	#menu ul:hover li {
+		background: var(--darkBlue2);}
+	ul#userinfo_minor.highlighted {
+		background:url("https://ptpimg.me/8mua6v.png") no-repeat !important;
+		background-size: 25px auto !important;
+		background-position: 0px 0px !important;}
+	.global_buffs {
+		top: 103px !important;
+		left: 170px !important;
+		font-size: 12px;}
+}
