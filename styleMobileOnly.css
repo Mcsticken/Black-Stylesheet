@@ -98,7 +98,10 @@
 	#userinfo_stats:hover li {
 		background: var(--darkBlue2);}
 	#userinfo_stats li {
-		border-bottom: 1px solid var(--mediumBlue);}
+		border-bottom: 1px solid var(--mediumBlue);
+		color: var(--lightBlue);}
+	#userinfo_stats li a {
+		color: var(--lightBlue) !important;}
 	#userinfo_username .sub span {
 		color: var(--lightBlue);
 		background-color: var(--darkBlue2);}
@@ -247,6 +250,8 @@
 	#menu ul li {
 		border-top: 1px solid var(--mediumBlue) !important;
 		border-bottom: 1px solid var(--mediumBlue) !important;}
+	#menu ul li a {
+		color: var(--lightBlue);}
 	#menu ul:hover li {
 		background: var(--darkBlue2);}
 	ul#userinfo_minor.highlighted {
