@@ -214,6 +214,10 @@
 		background: url(https://ptpimg.me/35u6g8.png);}
 	.forumstat {
 		background-color: var(--darkBlue);}
+	#forums .sub span {
+		background-color: var(--darkBlue2);
+		border-top: 1px solid var(--mediumBlue);}
+		
 	/* Reports */
 	#reportsv2 .colhead, #reportsv2 .colhead_dark, #reportsv2 .head {
 		background-color: var(--darkBlue);
