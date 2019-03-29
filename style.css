@@ -138,10 +138,6 @@ body {
 	opacity: 1;}
 #user .box_gold td.label {
 	background-color: rgba(73,73,73,0.35);}
-#torrents td.label {
-		background-color: var(--mediumBlue);}
-#torrents input {
-	background-color: var(--darkBlue);}
 .sticky #displayname:before {
 	background-image: url('https://ptpimg.me/2p5d71.png');}
 #platcheckbox td[colspan="5"] {
@@ -221,6 +217,7 @@ tr.likes td:nth-of-type(2) {
 	background: url(https://ptpimg.me/35u6g8.png);}
 .forumstat {
 	background-color: var(--darkBlue);}
+
 /* Reports */
 #reportsv2 .colhead, #reportsv2 .colhead_dark, #reportsv2 .head {
 	background-color: var(--darkBlue);
@@ -236,6 +233,17 @@ tr.likes td:nth-of-type(2) {
 	background-color: var(--darkBlue);}
 #inbox textarea {
 	background-color: var(--darkBlue);}
+	
+/* Torrents */
+#torrents td.label {
+	background-color: var(--mediumBlue);}
+#torrents input {
+	background-color: var(--darkBlue);}
+#torrents .groupoptions {
+	background: url('https://ptpimg.me/z4ht73.png') no-repeat scroll right top;}
+#torrents .groupoptions:hover a {
+	background: var(--darkBlue2);
+	border-top: 1px solid var(--mediumBlue);}
 
 /* Small screens */
 @media screen and (max-width: 1099px) {
