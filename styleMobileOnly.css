@@ -76,7 +76,7 @@
 	.profile .box_stats #profile_views .stat {
 		color: #FFF !important;}
 	#logo {
-		background: url('https://ptpimg.me/556j0z.png') no-repeat center !important;}
+		background: url('images/newlogo.png') no-repeat center !important;}
 	#userinfo {
 		background: linear-gradient(var(--menuTop),var(--menuBottom));}
 	.global_buffs {
@@ -86,7 +86,7 @@
 	#menu {
 		border-bottom: 1px solid var(--mediumBlue);}
 	#userinfo_minor{
-		background: url("https://ptpimg.me/hpr604.png") no-repeat scroll right top;}
+		background: url("images/userinfo_minor_icon.png") no-repeat scroll right top;}
 	#userinfo_minor:hover li {
 		background: var(--darkBlue2);}
 	#userinfo_minor li {
@@ -132,7 +132,7 @@
 	#user .box_gold td.label {
 		background-color: rgba(73,73,73,0.35);}
 	.sticky #displayname:before {
-		background-image: url('https://ptpimg.me/2p5d71.png');}
+		background-image: url('images/sticky1.png');}
 	#platcheckbox td[colspan="5"] {
 		background-color: var(--darkBlue);}
 	input::placeholder {
@@ -155,27 +155,27 @@
 		background: var(--darkBlue);
 		border: medium solid var(--mediumBlue);}
 	#bb_bold {
-		background-image: url('https://ptpimg.me/w5jr71.png');}
+		background-image: url('images/text_bold.png');}
 	#bb_ita {
-		background-image: url('https://ptpimg.me/ol9600.png');}
+		background-image: url('images/text_italic.png');}
 	#bb_und {
-		background-image: url('https://ptpimg.me/kr80ud.png');}
+		background-image: url('images/text_underline.png');}
 	#bb_strk {
-		background-image: url('https://ptpimg.me/j67sxc.png');}
+		background-image: url('images/text_strikethrough.png');}
 	#bb_lef {
-		background-image: url('https://ptpimg.me/o0u9su.png');}
+		background-image: url('images/text_align_left.png');}
 	#bb_cent {
-		background-image: url('https://ptpimg.me/zq5sh8.png');}
+		background-image: url('images/text_align_center.png');}
 	#bb_righ {
-		background-image: url('https://ptpimg.me/ox60g1.png');}
+		background-image: url('images/text_align_right.png');}
 	#bb_h1 {
-		background-image: url('https://ptpimg.me/37u9fv.png');}
+		background-image: url('images/text_heading_1.png');}
 	#bb_h2 {
-		background-image: url('https://ptpimg.me/ymmapn.png');}
+		background-image: url('images/text_heading_2.png');}
 	#bb_h3 {
-		background-image: url('https://ptpimg.me/088h2e.png');}
+		background-image: url('images/text_heading_3.png');}
 	#bb_list {
-		background-image: url('https://ptpimg.me/vxs36m.png');}
+		background-image: url('images/text_list_bullets.png');}
 		
 	/* Forums */
 	#forums .thin {
@@ -201,17 +201,17 @@
 	#footer {
 		background-color: black;}
 	#forums #content .thin td.unread {
-		background-image: url('https://ptpimg.me/327604.png');}
+		background-image: url('images/balloon-unread.png');}
 	#forums #content .thin td.unread_sticky {
-		background-image: url('https://ptpimg.me/t5i5p4.png');}
+		background-image: url('images/sticky-unread.png');}
 	#forums #content .thin td.unread_locked{
-		background-image:url('https://ptpimg.me/t5inx5.png');}
+		background-image:url('images/lock-unread.png');}
 	#forums #content .thin td.unread_locked_sticky{
-		background-image: url('https://ptpimg.me/q3lr5s.png');}
+		background-image: url('lock-sticky-unread.png');}
 	.last_read { 
-		background-image: url('https://ptpimg.me/38m2us.png');}
+		background-image: url('images/go_last_read.png');}
 	.sticky_post_label::before {
-		background: url(https://ptpimg.me/35u6g8.png);}
+		background: url('images/pin.png');}
 	.forumstat {
 		background-color: var(--darkBlue);}
 	#forums .sub span {
@@ -240,7 +240,7 @@
 	#torrents input {
 		background-color: var(--darkBlue);}
 		#torrents .groupoptions {
-		background: url('https://ptpimg.me/z4ht73.png') no-repeat scroll right top;}
+		background: url('images/optionsGreen.png') no-repeat scroll right top;}
 	#torrents .groupoptions:hover a {
 		background: var(--darkBlue2);
 		border-top: 1px solid var(--mediumBlue);}
@@ -249,9 +249,9 @@
 /* Mobile */
 @media screen and (max-width: 800px) {
 	#logo {
-		background: url(https://ptpimg.me/87y85l.png) no-repeat bottom center !important;}
+		background: url('images/logo-small.png') no-repeat bottom center !important;}
 	#alerts {
-		background: url('https://ptpimg.me/z4ht73.png') no-repeat scroll right top var(--lightBlue);
+		background: url('images/optionsGreen.png') no-repeat scroll right top var(--lightBlue);
 		background-color: transparent;}
 	#alerts a {
 		border-top: 1px solid var(--mediumBlue) !important;
@@ -266,7 +266,7 @@
 	#menu ul:hover li {
 		background: var(--darkBlue2);}
 	ul#userinfo_minor.highlighted {
-		background:url("https://ptpimg.me/8mua6v.png") no-repeat !important;
+		background:url("images/personred.png") no-repeat !important;
 		background-size: 25px auto !important;
 		background-position: 0px 0px !important;}
 	.global_buffs {
