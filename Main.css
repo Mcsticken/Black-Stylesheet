@@ -91,6 +91,12 @@ input {
 	font-size: 1.1em;
 	border-color: var(--grey);
 	background-color: var(--tpBlack);}
+.ui-widget-content {
+	background: var(--darkBlue2);
+	border: 1px solid var(--darkBlue);}
+.ui-widget-header {
+	background: linear-gradient(var(--menuBottom),var(--darkBlue2));
+	border-bottom: 1px solid var(--darkBlue);}
 	
 /* BBCode */
 .bbbutt {
