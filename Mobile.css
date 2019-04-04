@@ -10,7 +10,6 @@
 	border-bottom: none}
 #menu ul li {
 	border-top: 1px solid var(--mediumBlue) !important;
-	border-bottom: 1px solid var(--mediumBlue) !important;}
 #menu ul li a {
 	color: var(--lightBlue);}
 #menu ul:hover li {
@@ -26,4 +25,4 @@ ul#userinfo_minor.highlighted {
 #forums #content .thin .sub span {
     background: var(--darkBlue2);}
 #forums #content .thin .sub a {
-		color: var(--lightBlue) ;} 
+	color: var(--lightBlue) ;} 
