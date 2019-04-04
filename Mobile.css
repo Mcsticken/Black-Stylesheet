@@ -9,7 +9,7 @@
 #menu {
 	border-bottom: none}
 #menu ul li {
-border-top: 1px solid var(--mediumBlue) !important;} 
+	border-top: 1px solid var(--mediumBlue) !important;} 
 #menu ul li a {
 	color: var(--lightBlue);}
 #menu ul:hover li {
