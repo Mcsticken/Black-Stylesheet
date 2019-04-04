@@ -36,7 +36,7 @@ body {
 #userinfo_minor:hover li {
 	background: var(--darkBlue2);}
 #userinfo_minor li {
-	border-bottom: 1px solid var(--mediumBlue) !important;}
+	border-bottom: 1px solid var(--mediumBlue);}
 #userinfo_minor li a {
 	color: var(--lightBlue);}
 #userinfo_minor li a:hover {
@@ -44,7 +44,7 @@ body {
 #userinfo_stats:hover li {
 	background: var(--darkBlue2);}
 #userinfo_stats li {
-	border-bottom: 1px solid var(--mediumBlue);
+	border-bottom: 1px solid var(--mediumBlue) !important;
 	color: var(--lightBlue);}
 #userinfo_stats li a {
 	color: var(--lightBlue) !important;}
