@@ -1,19 +1,14 @@
-#logo {
-	background: url('images/logo-small.png') no-repeat bottom center !important;}
+#logo {background: url('images/logo-small.png') no-repeat bottom center !important;}
 #alerts {
 	background: url('images/optionsGreen.png') no-repeat scroll right top var(--lightBlue);
 	background-color: transparent;}
 #alerts a {
 	border-top: 1px solid var(--mediumBlue) !important;
 	border-bottom: 1px solid var(--mediumBlue) !important;}
-#menu {
-	border-bottom: none}
-#menu ul li {
-	border-top: 1px solid var(--mediumBlue) !important;} 
-#menu ul li a {
-	color: var(--lightBlue);}
-#menu ul:hover li {
-	background: var(--darkBlue2);}
+#menu {border-bottom: none}
+#menu ul li {border-top: 1px solid var(--mediumBlue) !important;} 
+#menu ul li a {color: var(--lightBlue);}
+#menu ul:hover li {background: var(--darkBlue2);}
 ul#userinfo_minor.highlighted {
 	background:url("images/personred.png") no-repeat !important;
 	background-size: 25px auto !important;
@@ -22,7 +17,5 @@ ul#userinfo_minor.highlighted {
 	top: 103px !important;
 	left: 170px !important;
 	font-size: 12px;}
-#forums #content .thin .sub span {
-    background: var(--darkBlue2);}
-#forums #content .thin .sub a {
-	color: var(--lightBlue) ;} 
+#forums #content .thin .sub span {background: var(--darkBlue2);}
+#forums #content .thin .sub a {color: var(--lightBlue) ;} 
