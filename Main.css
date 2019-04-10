@@ -131,7 +131,7 @@ tr.likes td:nth-of-type(2) {color: var(--grey);}
 .ui-widget-header {color: var(--lightBlue;)}
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close {
 	background: var(--darkBlue2);
-	border: 1px solid var(--grey2);}
+	border: 1px solid var(--darkGrey2);}
 .ui-widget-content {
 	background: var(--darkBlue2);
 	border: 1px solid var(--darkBlue);}
