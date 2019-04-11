@@ -3,12 +3,13 @@
 	background: url('images/optionsGreen.png') no-repeat scroll right top var(--lightBlue);
 	background-color: transparent;}
 #alerts a {
-	border-top: 1px solid var(--mediumBlue) !important;
-	border-bottom: 1px solid var(--mediumBlue) !important;}
+	border-top: var(--border) !important;
+	border-bottom: var(--border) !important;}
 #menu {border-bottom: none}
-#menu ul li {border-top: 1px solid var(--mediumBlue) !important;} 
+#menu ul li {border-top: var(--border) !important;} 
 #menu ul li a {color: var(--lightBlue);}
 #menu ul:hover li {background: var(--darkBlue2);}
+#menu ul li:last-of-type {border-bottom: var(--border) !important;}
 ul#userinfo_minor.highlighted {
 	background:url("images/personred.png") no-repeat !important;
 	background-size: 25px auto !important;

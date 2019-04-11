@@ -13,7 +13,8 @@
 	--label:		#363636;
 	--menuTop:		#303030;
 	--menuBottom:	#1F1F1F;
-	--tpBlack:		rgba(0,0,0,0.63);}
+	--tpBlack:		rgba(0,0,0,0.63);
+	--border:		1px solid var(--mediumBlue);}
 	
 /* General stuff */
 #userinfo_stats li#stats_gold {color: var(--newGold) !important;}
@@ -23,22 +24,29 @@
 #userinfo {background: linear-gradient(var(--menuTop),var(--menuBottom));}
 .global_buffs {background-color: transparent;}
 body {background: var(--darkBlue2);}
-#menu {border-bottom: 1px solid var(--mediumBlue);}
+#menu {border-bottom: var(--border);}
 #userinfo_minor{background: url("images/userinfo_minor_icon.png") no-repeat scroll right top;}
 #userinfo_minor:hover li {background: var(--darkBlue2);}
-#userinfo_minor li {border-bottom: 1px solid var(--mediumBlue);}
+#userinfo_minor li {border-bottom: var(--border);}
 #userinfo_minor li a {color: var(--lightBlue);}
 #userinfo_minor li a:hover {color: var(--white);}
 #userinfo_stats:hover li {background: var(--darkBlue2);}
 #userinfo_stats li {
-	border-bottom: 1px solid var(--mediumBlue) !important;
+	border-bottom: var(--border) !important;
 	color: var(--lightBlue);}
 #userinfo_stats li a {color: var(--lightBlue) !important;}
 #userinfo_username .sub span {
 	color: var(--lightBlue);
-	background-color: var(--darkBlue2);}
+	background-color: var(--darkBlue2);
+	border-bottom: var(--border);}
 #userinfo_username .sub span a {color: var(--lightBlue);}
 #userinfo_username .sub span a:hover {color: var(--white);}
+#userinfo_username .sub span:first-child {border-top: var(--border);}
+#userinfo_minor li:first-child {border-top: var(--border);}
+#userinfo_minor li {border-bottom: var(--border);}
+#userinfo_stats li:first-child {border-top: var(--border);}
+#userinfo_stats li {border-bottom: var(--border);}
+#userinfo_username .sub span:last-of-type, #userinfo_stats li:last-of-type, #userinfo_minor li:last-of-type {border-bottom: var(--border) !important;}
 #searchbars ul:hover li {background: var(--darkBlue);}
 #searchbars ul li input {background-color: var(--darkBlue2) !important;}
 #alerts:hover a {background: var(--darkBlue2);}
@@ -56,7 +64,7 @@ input::placeholder {
 	color: var(--grey);}
 input {
 	background-color: var(--darkGrey);
-	border: 1px solid var(--mediumBlue);}
+	border: var(--border);}
 #announcement {
 	width: 70%;
 	font-size: 1.1em;
@@ -101,9 +109,12 @@ tr.likes td:nth-of-type(2) {color: var(--grey);}
 .last_read {background-image: url('images/go_last_read.png');}
 .sticky_post_label::before {background: url('images/pin.png');}
 .forumstat {background-color: var(--darkBlue);}
-#forums .sub span {
-	background-color: var(--darkBlue2);
-	border-top: 1px solid var(--mediumBlue);}
+#forums .sub span {background-color: var(--darkBlue2);}
+#forums #content .thin .sub a {color: var(--lightBlue) !important;}
+#forums #content .thin .sub a:hover {color: var(--white) !important;}
+#forums #content .thin .sub span:first-child {border-top: var(--border);}
+#forums #content .thin .sub span {border-top: var(--border);}
+#forums #content .thin .sub span:last-of-type {border-bottom: var(--border);}
 
 /* Reports */
 #reportsv2 .colhead, #reportsv2 .colhead_dark, #reportsv2 .head {
@@ -124,11 +135,11 @@ tr.likes td:nth-of-type(2) {color: var(--grey);}
 #torrents .groupoptions {background: url('images/optionsGreen.png') no-repeat scroll right top;}
 #torrents .groupoptions:hover a {
 	background: var(--darkBlue2);
-	border-top: 1px solid var(--mediumBlue);}
+	border-top: var(--border);}
 	
 /* Shop and Inventory */
 .book .book_content {background-color: var(--darkblue);}
-.ui-widget-header {color: var(--lightBlue;)}
+.ui-widget-header {color: var(--lightBlue);}
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-dialog-titlebar-close {
 	background: var(--darkBlue2);
 	border: 1px solid var(--darkGrey2);}
@@ -147,7 +158,7 @@ tr.likes td:nth-of-type(2) {color: var(--grey);}
 		font-family: roboto;
 		font-size: 1.7em;}
 	#menu {
-		border-bottom: 1px solid var(--mediumBlue);
+		border-bottom: var(--border);
 		font-family: roboto;
 		font-size: 1.7em;}
 	#menu ul {
@@ -156,5 +167,5 @@ tr.likes td:nth-of-type(2) {color: var(--grey);}
 }
 	
 @media screen and (min-width: 801px) {
-	#menu {border-bottom: 1px solid var(--mediumBlue);
+	#menu {border-bottom: var(--border);}
 }
