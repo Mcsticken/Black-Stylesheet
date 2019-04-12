@@ -17,6 +17,9 @@
 	--border:		1px solid var(--mediumBlue);}
 	
 /* General stuff */
+a:hover {
+	color: var(--darkGreen);
+	text-decoration: none;}
 #userinfo_stats li#stats_gold {color: var(--newGold) !important;}
 .profile .box_stats #gold .stat {color: var(--newGold) !important;}
 .profile .box_stats #profile_views .stat {color: #FFF !important;}
@@ -29,18 +32,19 @@ body {background: var(--darkBlue2);}
 #userinfo_minor:hover li {background: var(--darkBlue2);}
 #userinfo_minor li {border-bottom: var(--border);}
 #userinfo_minor li a {color: var(--lightBlue);}
-#userinfo_minor li a:hover {color: var(--white);}
+#userinfo_minor li a:hover {color: var(--darkGreen);}
 #userinfo_stats:hover li {background: var(--darkBlue2);}
 #userinfo_stats li {
 	border-bottom: var(--border) !important;
 	color: var(--lightBlue);}
+#userinfo_stats li a:hover {color: var(--darkGreen) !important;}
 #userinfo_stats li a {color: var(--lightBlue) !important;}
 #userinfo_username .sub span {
 	color: var(--lightBlue);
 	background-color: var(--darkBlue2);
 	border-bottom: var(--border);}
 #userinfo_username .sub span a {color: var(--lightBlue);}
-#userinfo_username .sub span a:hover {color: var(--white);}
+#userinfo_username .sub span a:hover {color: var(--darkGreen);}
 #userinfo_username .sub span:first-child {border-top: var(--border);}
 #userinfo_minor li:first-child {border-top: var(--border);}
 #userinfo_minor li {border-bottom: var(--border);}
@@ -50,6 +54,9 @@ body {background: var(--darkBlue2);}
 #searchbars ul:hover li {background: var(--darkBlue);}
 #searchbars ul li input {background-color: var(--darkBlue2) !important;}
 #alerts:hover a {background: var(--darkBlue2);}
+#alerts:hover a:hover {
+	color: var(--darkGreen);
+	background: var(--darkBlue2);}
 #content {background: black;}
 .box, table {background: black;}
 #user td.label {background-color: var(--mediumBlue);}
@@ -111,7 +118,7 @@ tr.likes td:nth-of-type(2) {color: var(--grey);}
 .forumstat {background-color: var(--darkBlue);}
 #forums .sub span {background-color: var(--darkBlue2);}
 #forums #content .thin .sub a {color: var(--lightBlue) !important;}
-#forums #content .thin .sub a:hover {color: var(--white) !important;}
+#forums #content .thin .sub a:hover {color: var(--darkGreen) !important;}
 #forums #content .thin .sub span:first-child {border-top: var(--border);}
 #forums #content .thin .sub span {border-top: var(--border);}
 #forums #content .thin .sub span:last-of-type {border-bottom: var(--border);}
