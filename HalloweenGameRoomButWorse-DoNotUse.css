@@ -1,0 +1,10 @@
+/* Halloween Game Room by chris10000, but worse */
+
+@import url(https://gazellegames.net/static/styles/halloween_game_room/style1.css);						/* Main CSS */
+@import url(https://gazellegames.net/static/styles/game_room/caticons.css);			/* Category icons from Gameroom */
+
+
+/* Just in case gamethemes.css is not available or Limbo changes */
+@font-face {
+	font-family: "limbo"; 
+	src: url(../game_room/fonts/limbo.ttf);}
