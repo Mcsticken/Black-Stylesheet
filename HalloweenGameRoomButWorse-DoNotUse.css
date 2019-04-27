@@ -1,10 +1,193 @@
 /* Halloween Game Room by chris10000, but worse */
 
-@import url(https://gazellegames.net/static/styles/halloween_game_room/style1.css);						/* Main CSS */
-@import url(https://gazellegames.net/static/styles/game_room/caticons.css);			/* Category icons from Gameroom */
+/* Game Room by chris10000, but worse */
 
+/*****Importing Game Room except for special pages*****/
+/* Overall Files */
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/variables.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/overallStyles.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/header.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/footer.css');
+@import url('https://gazellegames.net/static/styles/game_room/caticons.css');
+
+/* Main Pages */
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/homepage.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/torrentsBrowse.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/torrentsGames.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/bundles.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/requests.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/forums.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/rules.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/wiki.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/staff.css');
+
+/* Palooza */
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaOverall.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaShop.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaInventory.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaCrafting.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaEquipment.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/paloozaTrading.css');
+
+/* AdventureClub (Fight System) */
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/adventureSkills.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/adventureBackpack.css');
+
+/* Misc Pages */
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/upload.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/profiles.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/clans.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/staffPages.css');
+@import url('https://gazellegames.net/static/styles/game_room/cssFiles/miscPages.css');
+
+/* Other Screen Sizes */
+@import url('https://gazellegames.net/static/styles/game_room/screenSizes/mobile.css') screen and (max-width: 800px);
+@import url('https://gazellegames.net/static/styles/game_room/screenSizes/largeDesktop.css') screen and (min-width: 1400px);
+@import url('https://gazellegames.net/static/styles/game_room/screenSizes/middleDesktop.css') screen and (min-width: 801px) and (max-width: 1099px);
+@import url('https://gazellegames.net/static/styles/game_room/screenSizes/palooza.css');
 
 /* Just in case gamethemes.css is not available or Limbo changes */
 @font-face {
 	font-family: "limbo"; 
-	src: url(../game_room/fonts/limbo.ttf);}
+	src: url(fonts/limbo.ttf);}
+	
+body {
+    background: url(images/background.jpg) top;
+    background-size: cover;
+    background-attachment: fixed;}
+
+#logo,
+#logo.power_logo1,
+#logo.power_logo2,
+#logo.power_logo3 {
+	background: url(images/logo.png) no-repeat bottom center;}
+
+#content {
+	background: linear-gradient(to bottom,
+		rgba(69,42,28,0.8) 0%,
+		rgba(150, 99, 26, 0.6) 23%,
+		rgba(69,42,28,0.8) 51%,
+		rgba(150, 99, 26, 0.6) 73%,
+		rgba(69,42,28,0.8) 100%)}
+
+#collections .thin div.center {
+	margin: -26px 0 0 -14px !important;
+	background: none;}
+
+#menu ul li a:hover,
+#userinfo #userinfo_username .donateico a:hover {
+	color: #f9960a;}
+
+.box, table, .profile .box_main_info {
+	background: none;
+	background-color: rgba(0,0,0,.6);}
+.profile .box_stats,
+.torrent_history tr:nth-of-type(2n) td {background: none;}
+
+#menu {
+	font-family: Limbo;
+	font-size: 1.9em;
+	font-weight: normal;
+	background-color: rgba(0,0,0,.7);}
+#menu ul {
+	max-width: 1000px;
+	margin-top: -3px;}
+#menu ul li a {
+	color: #b97d27;
+	text-shadow: 1px 1px 2px #000;}
+
+#userinfo #userinfo_username .donateico a {
+	font-family: Limbo;
+	font-size: 1.9em;
+	color: #b97d27;}
+#userinfo #userinfo_username .donateico {
+	margin-top: 30px;
+	margin-left: -20px;}
+
+@media screen and (max-width: 1099px) and (min-width: 801px) {
+	#userinfo #userinfo_username .donateico {
+		margin-top: 33px;}
+	}
+
+
+a:hover {
+	color:#f9960a !important;}
+
+#alerts {text-shadow: 1px 1px 5px #000;}
+
+.colhead, .colhead_dark, .head, #achievements .colhead {
+	background: linear-gradient(to bottom,
+		rgba(185,125,39,1) 0%,
+		rgba(69,42,28,1) 33%);
+	color: #b1b1b1;}
+.colhead a, .colhead_dark a, .head a {
+	color: #b1b1b1;}
+
+.rowa td, .row_a td, #torrents .rowa td {background-color: rgba(185,125,39, 0.15)}
+.sticky, .rowb td, .row_b td, #torrents .rowb td {background-color: rgba(69,42,28, 0.33)}
+.sticky td {border-bottom: 1px solid rgba(252, 252, 5, .7)!important;}
+
+#forums #content #otherop td,
+#forums #content #forumlist td,
+#forums #content .search table tr,
+#site_debug,
+#server_stats,
+#toplink,
+#copyright p:nth-of-type(2),
+textarea, input, select, button,
+.rating_container,
+td.avatar,
+tr.likes td,
+blockquote,
+pre,
+ul#userinfo_minor li,
+ul#userinfo_minor:hover li,
+ul#userinfo_stats li,
+.sub span,
+.spoilerbox,
+.wiki_index h4:nth-of-type(1), .wiki_index h4:nth-of-type(2),
+.wiki_index .wiki_article strong,
+#wiki h5,
+#forums table.border .cat_list td[colspan="5"],
+#searchbars ul.autocomplete_list li,
+#torrents #torrentsbrowsecomplete li,
+#collections .thin div.center {
+	background-color: #0E1720;}
+
+textarea, input, select, button,
+blockquote, pre,
+.spoilerbox {
+	border: 1px solid #333;}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.rating_container:hover {
+	background: #f9960a;
+	color: #000;}
+
+#forums table.forum_unread {border-top: 2px solid rgba(252, 252, 5, .7);}
+#forums .forum_post .colhead_dark div[style="float:left;"] {margin-top: 3px;}
+
+#forums #content .thin td.unread {background-image: url(images/forum_unread.png);}
+#forums #content .thin td.read {background-image: url(images/forum_read.png);}
+#forums #content .thin td.unread_sticky {filter: hue-rotate(196deg);}
+
+#forums td.body {padding-left: 15px;}
+.forumstat {background: rgba(69,42,28,1);}
+
+.main_column .torrent_table tr.group_torrent td.edition_info {background: rgba(69,42,28,1);}
+.main_column .torrent_table tr.group_torrent td.edition_info:nth-of-type(1) {border-top: 1px solid #000;}
+
+.group_torrent.row_a {background-color: rgba(185,125,39, 0.15)}
+#torrents .row_a td {background-color: rgba(185,125,39, 0.0)}
+.group_torrent.row_b, #torrents .row_b td {background-color: rgba(69,42,28, 0.33)}
+
+.group_torrent:hover,
+.group:hover,
+.torrent:hover {
+    background-color: rgba(185,125,39,.4);}
+
+.items_style #userinfo #userinfo_username .donateico {
+    margin-top: 34px;
+    margin-left: 0px;}
