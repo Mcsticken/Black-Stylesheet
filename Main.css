@@ -40,6 +40,9 @@ body {
 #userinfo_minor li {border-bottom: var(--border);}
 #userinfo_minor li a {color: var(--lightBlue);}
 #userinfo_minor li a:hover {color: var(--darkGreen);}
+#userinfo_minor a.highlight {
+    background-color: var(--darkBlue2);
+	border: 3px solid var(--darkGreen);}
 #userinfo_stats:hover li {background: var(--darkBlue2);}
 #userinfo_stats li {
 	border-bottom: var(--border) !important;
