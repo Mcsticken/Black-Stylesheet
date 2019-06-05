@@ -22,3 +22,6 @@ ul#userinfo_minor.highlighted {
 #forums #content .thin .sub a {color: var(--lightBlue) ;}
 
 #items_navigation {width: 18px;}
+
+#torrents .main_column tr.group_torrent td:nth-child(1) span a {border-left: 1px solid var(--darkBlue2) !important}
+#torrents .main_column tr.group_torrent td:nth-child(1) span:hover a {background: var(--darkBlue)}
