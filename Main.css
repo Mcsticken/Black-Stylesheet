@@ -7,6 +7,7 @@
 	--darkGrey:		#313131;
 	--darkGrey2:	#282828;
 	--lightBlue: 	#D0E5D2;
+	--lightBlue30:	rgba(208, 229, 210, 0.3);
 	--newGold:		#F8DB66;
 	--rowa: 		rgba(0, 0, 0, .85);
 	--rowb: 		rgba(73, 73, 73, .85);
@@ -133,6 +134,7 @@ tr.likes td:nth-of-type(2) {color: var(--grey);}
 #forums #content .thin .sub span:first-child {border-top: var(--border);}
 #forums #content .thin .sub span {border-top: var(--border);}
 #forums #content .thin .sub span:last-of-type {border-bottom: var(--border);}
+span.redacted_bbcode {border: 1px solid var(--grey)} 
 
 /* Reports */
 #reportsv2 .colhead, #reportsv2 .colhead_dark, #reportsv2 .head {
@@ -154,6 +156,7 @@ tr.likes td:nth-of-type(2) {color: var(--grey);}
 #torrents .groupoptions:hover a {
 	background: var(--darkBlue2);
 	border-top: var(--border);}
+#torrents .sticky td {border-top: none !important;}
 	
 /* Shop and Inventory */
 .book .book_content {background-color: var(--darkGrey2);}
